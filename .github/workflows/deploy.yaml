@@ -17,7 +17,7 @@ jobs:
     - name: Deploy agritheory.github.io/forten
       uses: peaceiris/actions-gh-pages@v3
       env:
-        github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: packages/docs/.vitepress/dist
         publish_branch: gh-pages
         skip_on_fork: false
