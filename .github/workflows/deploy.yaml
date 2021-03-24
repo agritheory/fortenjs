@@ -19,5 +19,4 @@ jobs:
       env:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: packages/docs/.vitepress/dist
-      with:
-          emptyCommits: false
+        publish_branch: gh-pages
