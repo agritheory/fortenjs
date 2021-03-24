@@ -15,11 +15,9 @@ jobs:
     - run: npm run docs:build
 
     - name: Deploy agritheory.github.io/forten
-      uses: peaceiris/actions-gh-pages@v2
+      uses: peaceiris/actions-gh-pages@v3
       env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        EXTERNAL_REPOSITORY: agritheory.github.io/forten
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: packages/docs/.vitepress/dist
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: packages/docs/.vitepress/dist
       with:
           emptyCommits: false
