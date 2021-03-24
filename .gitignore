@@ -2,7 +2,6 @@ node_modules
 /packages/other
 **/.cache
 **/coverage
-**/dist
 **/.env*
 **/*.log
 **/yarn.lock

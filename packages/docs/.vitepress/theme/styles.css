@@ -1,0 +1,25 @@
+.nav-bar {
+	background-color: var(--c-bg) !important;
+	color: var(--text-light-1) !important;
+}
+
+.custom-block.tip {
+	color: var(--c-brand) !important;
+	border-left-color: var(--c-brand) !important;
+	background-color: var(--c-text-light-3) !important;
+}
+.custom-block.tip.custom-block-title {
+	color: var(--c-brand) !important;
+}
+
+.warning {
+	background-color: var(--c-text-light-2) !important;
+}
+
+.danger {
+	background-color: var(--c-text-light-1) !important;
+}
+
+.content h1, h2, h3, h4, h5, h6 {
+	color: var(--c-brand) !important;
+}
